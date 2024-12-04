@@ -1,0 +1,77 @@
+:root {
+    --heading-backgroun-color: #faf0ca;
+    --heading-text-color: black;
+    --heading-font: 'Koh Santepheap';
+    --padding: 1rem;
+    --paragraph-font: Lato;
+    --paragraph-color: black;
+    --nav-font: 'Lato 400';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sociallinks {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    padding: var(--padding);
+}
+
+main {
+    width: 85%;
+    height: auto;
+    text-align: center;
+}
+
+nav {
+    font-family: var(--nav-font);
+}
+
+p {
+    font-family: var(--paragraph-font);
+    padding-left: var(--padding);
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    background-color: var();
+    width: 100%;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    width: 80%;
+
+}
+
+.hero article img {
+    float: right;
+    width: 30%;
+    height: auto;
+    margin-left: 1rem;
+}
