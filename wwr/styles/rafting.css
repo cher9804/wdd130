@@ -57,7 +57,7 @@ p {
     position: absolute;
     top: 10%;
     left: 0;
-    background-color: var();
+    background-color: var(--heading-backgroun-color);
     width: 100%;
 }
 
