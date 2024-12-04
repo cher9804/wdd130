@@ -1,10 +1,11 @@
 :root {
-    --heading-backgroun-color: #faf0ca;
+    --heading-backgroun-color: #FAF0CA50;
     --heading-text-color: black;
     --heading-font: 'Koh Santepheap';
     --padding: 1rem;
-    --paragraph-font: Lato;
+    --paragraph-background-color: #EE964B80;
     --paragraph-color: black;
+    --paragraph-font: Lato;
     --nav-font: 'Lato 400';
 }
 
@@ -12,10 +13,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.sociallinks {
-    text-decoration: none;
 }
 
 h1,
@@ -29,9 +26,8 @@ h6 {
 }
 
 main {
-    width: 85%;
+    width: 100%;
     height: auto;
-    text-align: center;
 }
 
 nav {
@@ -42,6 +38,9 @@ p {
     font-family: var(--paragraph-font);
     padding-left: var(--padding);
 }
+
+
+/* Class Selectors */
 
 .hero {
     position: relative;
@@ -56,16 +55,18 @@ p {
 .hero h1 {
     position: absolute;
     top: 10%;
-    left: 0;
     background-color: var(--heading-backgroun-color);
     width: 100%;
+    text-align: center;
 }
 
 .hero article {
     position: absolute;
-    bottom: 10%;
-    left: 5%;
+    bottom: 35%;
+    left: 10%;
     width: 80%;
+    background-color: var(--paragraph-background-color);
+    padding: var(--padding);
 
 }
 
@@ -74,4 +75,21 @@ p {
     width: 30%;
     height: auto;
     margin-left: 1rem;
+}
+
+.sociallinks {
+    text-decoration: none;
+    width: 10%;
+    height: auto;
+    display: inline;
+}
+
+.sociallinks img {
+    width: 20%;
+    height: auto;
+}
+
+.adventure img {
+    display: block;
+    width: 80%;
 }
