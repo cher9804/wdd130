@@ -1,0 +1,272 @@
+Week 02 Notes
+
+These are elements
+
+<p> </p>
+
+element: opening tag and closing tag, content
+
+attribute
+
+<p class="attribute"> This is the content </p>
+
+Nesting elements
+
+<p>My cat is <strong>very</strong> grumpy.</p>
+
+
+Void elements
+They dont need content but attributes and no closing tag
+
+<img src="images/firefox-icon.png" alt="My test image" />
+
+<!DOCTYPE html> Required preamble
+
+<html> </html> wraps all the content, ROOT ELEMENT and has the lang attribute setting the primary language of the document
+
+<head></head> cts as a container for all the stuff you want to include on the HTML page that isn't the content you are showing to your pages viewers
+
+<meta charset="utf-8"> chracter set for the document, this includes most of the characters from the vast majority of written languages
+
+<meta name="viewport" content="width=device-width"> ensures the page renders at the width of viewport, preventing mobile browsers from rendering pages wider thant the viewport and then shrinking them down
+
+<title></title> sets the title of your page which is the title that appears in the brwser tab the page is loaded in. it is also used to describe the page when you bookmark/ favorite it
+
+<body> </body> contains all content you want to you
+
+<!-- Marking up text in the HTML Basics for Mozilla -->
+
+<img src="here_goes_the_link" alt="This is the actual description used for accesibility">
+
+<h1></h1> - <h6></h6> Headings
+
+<p> This is a paragraph</p>
+
+<ul> This is an tag for unordered lists</ul>
+<ol>This is the tag for ordered lists </ol>
+
+<li>his is a list Item inside a ul or ol tag</li>
+
+<a href="Here goes the link or the page">Here goes the naming that will redirect the link</a>
+
+CSS
+
+p (selector) {
+    color:red
+    property: property value
+    [Declaration]
+}
+
+the structure is called ruleset or just rule
+
+selector, defines elemtns to be styled
+
+Declaration single rule. specifies which of the elements properties you want to style
+
+IMPORTANT
+Apart from the selector, each ruleset must be wrapped in curly braces. ({})
+Within each declaration, you must use a colon (:) to separate the property from its value or values.
+Within each ruleset, you must use a semicolon (;) to separate each declaration from the next one.
+
+multiple elements:
+p,
+li,
+h1 {
+  color: red;
+}
+
+elemnts to be selected:
+
+Universsal
+  * {......}, applies to all elements
+Type
+  h1 {...} applies to all h1 elements
+Class
+  .red {...} Aookies to all elements with the red class value
+ID
+  #red {...} Applies to one element with 'red' id value
+
+<p>Class attribute can be aplies to many elements on a document, it can be used for multiple elements in HTML</p>
+
+<h1>HTML Example </h1>
+
+<div class="callout highlight active"> </div>
+<span class="highlight"></span>
+
+<!-- This is a comment in HTML -->
+<h1>CSS example of selector</h1>
+
+.highlight {declaration}
+.callout {declaration}
+.active {declaration}
+
+A ID attribute can only be applied to one element per document and each element may only have one id, in CSS is selected using hash (#) notation
+
+<h1>HTML</h1>
+<nav id="sub-menyu"></nav>
+<h1>CSS</h1>
+#sub-menu {declarations}
+
+anything in /* */ is a comment in CSS
+
+
+<p>This is an optional configuration in CSS</p>
+padding, the space around the content. In the example below, it is the space around the paragraph text.
+border, the solid line that is just outside the padding.
+margin, the space around the outside of the border.
+
+width (of an element).
+background-color, the color behind an element's content and padding.
+color, the color of an element's content (usually text).
+text-shadow sets a drop shadow on the text inside an element.
+display sets the display mode of an element. (keep reading to learn more)
+
+<p>
+    body {
+        width: 600px;
+        margin: 0 auto;
+        background-color: #ff9500;
+        padding: 0 20px 20px 20px;
+        border: 5px solid black;
+      }
+</p>
+
+
+<p>Float - Element Property</p>
+
+Used to put images next to the container, as in Box Model, can be put in the <strong>left or right</strong> of the container. No need to declare it unless we plan to float the element. 
+
+<strong>This is an example below from the PDF Files</strong>
+
+<p>
+  <h1><STRONg>HTML</STRONg></h1>
+  
+  <section>
+    <h2>Float Example (float: right;)</h2>
+    <div class="col1">
+      <img src="http://dummyimage.com/100x200/333/fff/" alt="placeholder image" width="100" height="200">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil dolorum repudiandae commodi architecto non! Quam sunt dolorem autem rerum culpa nam dicta cum, minima asperiores totam ea esse ut molestiae. Nostrum eaexcepturi. Mollitia ex quis totam.</p>
+      
+    </div>
+    <footer>©️ Footer stuff ... Lorem ipsum <br><strong>This should not be in line with the image</strong>. </footer>
+  </section>
+
+<strong>CSS</strong>
+section {
+	width: 75vw;
+	margin: 1rem auto;
+	background-color: #eee;
+	padding: 1rem;
+	border: 1px solid rgb(0 0 0 / .1);
+}
+
+p {
+	text-align: justify;
+}
+
+.col1 img {
+	float: right;
+	margin: 0 0 15px 15px;
+	border: 1px solid rgba(0 0 0 / .3);
+	box-shadow: 0 0 30px #777;
+}
+
+
+footer {
+	border-top: 1px solid #555;
+	padding-top: 5px;
+	/* Remove the comment below and observe the results. */
+	
+  /* clear: both; */ If we remove this then the footer will go all the way down the image, otherwise it will go below the actual text
+}
+
+
+the "clear" ruleset is important so that the footer goes down were the image finish, otherwise the footer will overlap with the image
+
+/* Keyword values */
+clear: none;
+clear: left;
+clear: right;
+clear: both;
+clear: inline-start;
+clear: inline-end;
+
+by default float goes as none, here the possible variations:
+float: none;
+float: left;
+float: right;
+float: inline-start;
+float: inline-end;
+
+<strong>Here finish the example from the PDF</strong>
+
+In the exercise we did as part of the Layout Position, the position relative will be inside the container <div></div> this cause the position property when placed to adsolute/fixed to be set inside that container:
+<p>The information section overlay moves to the bottom left of the document instead of the bottom left of
+the div.herodiv container. This happens because, with the position property, the absolute positioned
+item is positioned relative to its ancestors that have a declared, position property. Since none have that
+property now, it moves to the overall document position instead of the <div class="herodiv">
+container.</p>
+
+el <strong>clear</strong> se utiliza con float property no con el position layout
+
+
+el CSS property border-sizing = content-box/border-box nos permite decidir si en las medidas de width y height se incluyen o no los padding/margin/border
+En el caso de content-box, no los tiene en cuenta entonces si asignas 15 de padding y 10 de margin a un width de 400, el total sera de 425, por el contrario el border-box hara que la suma de estas propiedades sean un total de 400 como se especifico en el width
+
+Se pueden hacer cosas como 
+
+ul>li*3>a que trae lo siguiente
+<ul>
+  <li><a href=""></a></li>
+  <li><a href=""></a></li>
+  <li><a href=""></a></li>
+</ul>
+
+This is how root is used for variables:
+:root {
+  --heading-backgroun-color: #FAF0CA50;
+  --heading-text-color: black;
+  --heading-font: 'Koh Santepheap';
+  --padding: 1rem;
+  --paragraph-background-color: #EE964B80;
+  --paragraph-color: black;
+  --paragraph-font: Lato;
+  --nav-font: 'Lato 400';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  padding: var(--padding);
+}
+
+
+*********************************************************WEEK 4************************************************************
+
+Flex Box video
+
+
+<link rel="stylesheet" href="CSS.CSS">
+<body>
+  <div class="flexbox-container">
+    <!-- div.flexbox-item.flexbox-item-1   crea lo de abajo-->
+    <div class="flexbox-item flexbox-item-1"> </div>
+    <div class="flexbox-item flexbox-item-2"> </div>
+    <div class="flexbox-item flexbox-item-3"> </div>
+
+  </div>
+</body>
+
+REVISAR CONTENIDO EN Week 4 Flex box
+
+flex-direction set if it goes on row(default) or in column

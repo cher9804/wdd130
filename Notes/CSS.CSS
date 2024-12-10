@@ -1,0 +1,48 @@
+
+section {
+	width: 75vw;
+	margin: 1rem auto;
+	background-color: #eee;
+	padding: 1rem;
+	border: 1px solid rgb(0 0 0 / .1);
+}
+
+p {
+	text-align: justify;
+}
+/* this is a float example */
+.col1 img {
+	float: right;
+	margin: 0 0 15px 15px;
+	border: 1px solid rgba(0 0 0 / .3);
+	box-shadow: 0 0 30px #777;
+}
+
+
+/* WEEK 4 FLEXBOX EXPLANATION */
+.flexbox-container {
+	display: flex;
+	justify-content: center;
+}
+
+.flexbox-item {
+	width: 200px;
+	margin: 10px;
+	border: 3px solid #333;
+	background-color: #dfdfdf;
+}
+
+.flexbox-item-1 {
+	min-height: 100px;
+}
+
+.flexbox-item-2 {
+	min-height: 200px;
+}
+
+.flexbox-item-3 {
+	min-height: 300px;
+}
+
+
+

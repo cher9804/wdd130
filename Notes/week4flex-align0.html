@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Flexbox align 0 — starting code</title>
+  <style>
+    html {
+      font-family: sans-serif;
+    }
+
+    body {
+      width: 70%;
+      max-width: 960px;
+      margin: 20px auto;
+    }
+
+    button {
+      font-size: 18px;
+      line-height: 1.5;
+      width: 15%;
+    }
+
+    div {
+      height: 100px;
+      border: 1px solid black;
+    }
+
+    /* Add your flexbox CSS below here */
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      /* space around is for all corners, space between is for the items themselves */
+      /* controls where the flex items sit on the main axis. */
+    }
+    button:first-child {
+  align-self: flex;
+  /* this allow us to align one item in whatever the way we want */
+  order: 1;
+  /* default for this order is 0, higher values will appear later in the display order than items with lower order values: . */
+  /* Flex items with the same order value will appear in their source order. So if you have four items whose order values have been set as 2, 1, 1, and 0 respectively, their display order would be 4th, 2nd, 3rd, then 1st. */
+}
+button:last-child {
+  order: -1;
+}
+
+
+  </style>
+</head>
+
+<body>
+  <div>
+    <button>Smile</button>
+    <button>Laugh</button>
+    <button>Wink</button>
+    <button>Shrug</button>
+    <button>Blush</button>
+  </div>
+</body>
+
+</html>
