@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Merriweather;
+    font-size: 1.2rem;
+    background: #fff ;
+    color: #333;
+}
+
+header {
+    margin: 0 auto;
+    width: 650px;
+
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+    color: navy;
+
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgb(0, 0, 0 /.1);
+    border-radius: 1rem;
+    background-color: #eee;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: .5rem;
+    padding: 1rem;
+    border: 1px solid #0D3B66;
+    border-radius: 1rem;
+}
+
+.html,
+.css {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+legend {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: navy;
+}
+
+label,
+input,
+select,
+textarea,
+button {
+    font-family: Roboto;
+}
+
+label {
+    text-align: center;
+    padding-right: .5rem;
+}
+
+input,
+select,
+textarea {
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button {
+    border: 1px solid #0D3B66;
+    border-radius: 1rem;
+    width: 200px;;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: navy;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 0 10px 0;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+
+footer {
+    margin: 1rem auto;
+    width: 650px;
+    text-align: center;
+    border-top: 1px solid #0d3b66;
+    font-size: .8em;
+    padding-top: 1rem;
+    
+}
