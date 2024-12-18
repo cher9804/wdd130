@@ -194,3 +194,116 @@ footer p {
     grid-row: 1/2;
 
 }
+
+.herocontactus {
+    position: relative;
+}
+
+.herocontactus img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.herocontactus h1 {
+    position: absolute;
+    top: 40%;
+    background-color: var(--heading-backgroun-color);
+    width: 100%;
+    text-align: center;
+}
+
+.herocontactus article {
+    position: absolute;
+    bottom: 35%;
+    left: 10%;
+    width: 80%;
+    background-color: var(--paragraph-background-color);
+    padding: var(--padding);
+
+}
+
+.team {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    place-items: center;
+}
+
+.team h2 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.team img {
+    width: 100%;
+}
+
+.contactus {
+
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgb(0, 0, 0 /0.1);
+    border-radius: 1rem;
+    background-color: #eee;
+    display: grid;
+    font-family: Roboto;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: .5rem;
+    padding:  1rem;
+    border: none;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+form p {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.userdata {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.userdata input {
+    padding: 5px;
+}
+
+.purpose {
+    display: flex;
+}
+
+.purpose .radio {
+    display: flex; comentario
+    align-items: center;
+
+}
+.radio p {
+    
+}
+
+
+
+
+
+

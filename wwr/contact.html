@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - White Water Rafting</title>
+    <meta name="description" content="Contact us page for company White Water Rafting." />
+    <meta name="author" content="Cristian Hernandez" />
+    <link rel="stylesheet" href="styles/rafting.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo Image of White Water Rafting company" class="logo" />
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <div class="herocontactus">
+            <img src="images/hero-image.jpg" alt="Group of people doing Rafting" />
+            <h1>Contact us</h1>
+        </div>
+        <section class="team">
+            <h2>Our Team</h2>
+            <div class="employee">
+                <img src="https://picsum.photos/300/200" alt="Placeholder image" />
+                <p>Employee 1</p>
+                <p>Title</p>
+            </div>
+            <div class="employee">
+                <img src="https://picsum.photos/300/200" alt="Placeholder image" />
+                <p>Employee 1</p>
+                <p>Title</p>
+            </div>
+            <div class="employee">
+                <img src="https://picsum.photos/300/200" alt="Placeholder image" />
+                <p>Employee 1</p>
+                <p>Title</p>
+            </div>
+
+        </section>
+        <section class="contactus">
+            <form>
+                <h2>Send us a message</h2>
+                <p>Send us a message and we'll respond within 24 hours.</p>
+                <fieldset class="userdata">
+                    <legend>Contact Information</legend>
+                    <!-- <div class="userdata"> -->
+                        <label for="username">Name</label>
+                        <label for="useremail">Email</label>
+                        <input type="text" id="username" name="username" placeholder="Your Name"/>
+                    <!-- </div> -->
+                    <!-- <div class="userdata"> -->
+                        <input type="email" id="useremail" name="useremail" placeholder="Your email address"></input>
+                    <!-- </div> -->
+                </fieldset>
+                <fieldset>
+                    <legend>Purpose</legend>
+                    <div class="purpose radio">
+                        <p>Purpose of the message</p>
+                        <label for="purpose">General Inquiry</label>
+                        <input type="radio" name="purpose" value="general-inquiry">
+                        <label for="purpose">Reservation Question</label>
+                        <input type="radio" name="purpose" value="reservation-question">
+                        <label for="purpose">Website Suggestion</label>
+                        <input type="radio" name="purpose" value="website-suggestion">
+                        <label for="purpose">Other</label>
+                        <input type="radio" name="purpose" value="other">
+                    </div>
+                    <div class="purpose">
+                        <label for="message">Message</label>
+                        <textarea placeholder="Here goes your message" id="message" name="message" rows="4"></textarea>
+                    </div>
+                </fieldset>
+                <div class="button">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </section>
+        <section>
+            <h2>Headquarters</h2>
+            <div class="addressinfo">
+                <div class="addressdata">
+                    <h3>Address</h3>
+                    <p>Vía Polígono Indú Alces, 60P, 13600 Alcázar de San Juan, Ciudad Real, Spain</p>
+                </div>
+                <div class="addressdata">
+                    <h3>Email</h3>
+                    <p>thisisnotreal@fakeemailnotreal.com</p>
+                </div>
+                <div class="addressdata">
+                    <h3>Phone</h3>
+                    <p>+1 123-456-7890</p>
+                </div>
+            </div>
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d810.0736272532606!2d-3.2252908756268037!3d39.40660970651543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd69afaec7289e35%3A0xf4b558df5f662fe9!2sV%C3%ADa%20Pol%C3%ADgono%20Ind%C3%BA%20Alces%2C%2060P%2C%2013600%20Alc%C3%A1zar%20de%20San%20Juan%2C%20Ciudad%20Real%2C%20Spain!5e0!3m2!1sen!2sus!4v1733999978429!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; - 2024 - White Water Rafting - Cristian Hernandez</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com"><img src="images/facebook-icon.png" alt="facebook profile" /></a>
+            <a href="https://twitter.com"><img src="images/x-icon.png" alt="x profile" /></a>
+            <a href="https://instagram.com"><img src="images/instagram-icon.png" alt="instagram profile" /></a>
+        </nav>
+    </footer>
+</body>
+
+</html>
