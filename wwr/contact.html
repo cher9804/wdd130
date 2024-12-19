@@ -27,25 +27,26 @@
     </header>
     <main>
         <div class="herocontactus">
-            <img src="images/hero-image.jpg" alt="Group of people doing Rafting" />
+            <img src="images/hero-contact-us.jpg"
+                alt="Group of people doing Rafting in a river which is in the middle of two mountains" />
             <h1>Contact us</h1>
         </div>
         <section class="team">
             <h2>Our Team</h2>
             <div class="employee">
-                <img src="https://picsum.photos/300/200" alt="Placeholder image" />
-                <p>Employee 1</p>
-                <p>Title</p>
+                <img src="images/employee1.jpeg" alt="Placeholder image" />
+                <p>Christopher Smith</p>
+                <p>CEO</p>
             </div>
             <div class="employee">
-                <img src="https://picsum.photos/300/200" alt="Placeholder image" />
-                <p>Employee 1</p>
-                <p>Title</p>
+                <img src="images/employee2.jpeg" alt="Placeholder image" />
+                <p>Andrew Almost</p>
+                <p>Head of Customer Success</p>
             </div>
             <div class="employee">
-                <img src="https://picsum.photos/300/200" alt="Placeholder image" />
-                <p>Employee 1</p>
-                <p>Title</p>
+                <img src="images/employee3.jpeg" alt="Placeholder image" />
+                <p>Lauren Stapley</p>
+                <p>CFO</p>
             </div>
 
         </section>
@@ -55,31 +56,34 @@
                 <p>Send us a message and we'll respond within 24 hours.</p>
                 <fieldset class="userdata">
                     <legend>Contact Information</legend>
-                    <!-- <div class="userdata"> -->
-                        <label for="username">Name</label>
-                        <label for="useremail">Email</label>
-                        <input type="text" id="username" name="username" placeholder="Your Name"/>
-                    <!-- </div> -->
-                    <!-- <div class="userdata"> -->
-                        <input type="email" id="useremail" name="useremail" placeholder="Your email address"></input>
-                    <!-- </div> -->
+                    <label for="username">Name</label>
+                    <label for="useremail">Email</label>
+                    <input type="text" id="username" name="username" placeholder="Your Name" />
+                    <input type="email" id="useremail" name="useremail" placeholder="Your email address"></input>
                 </fieldset>
                 <fieldset>
                     <legend>Purpose</legend>
-                    <div class="purpose radio">
-                        <p>Purpose of the message</p>
-                        <label for="purpose">General Inquiry</label>
-                        <input type="radio" name="purpose" value="general-inquiry">
-                        <label for="purpose">Reservation Question</label>
-                        <input type="radio" name="purpose" value="reservation-question">
-                        <label for="purpose">Website Suggestion</label>
-                        <input type="radio" name="purpose" value="website-suggestion">
-                        <label for="purpose">Other</label>
-                        <input type="radio" name="purpose" value="other">
+                    <div class="purpose, purpose-radio">
+                        <div>
+                            <input type="radio" name="purpose" value="general-inquiry">
+                            <label for="purpose">General Inquiry</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="purpose" value="reservation-question">
+                            <label for="purpose">Reservation Question</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="purpose" value="website-suggestion">
+                            <label for="purpose">Website Suggestion</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="purpose" value="other">
+                            <label for="purpose">Other</label>
+                        </div>
                     </div>
-                    <div class="purpose">
+                    <div class="purpose, purpose-message">
                         <label for="message">Message</label>
-                        <textarea placeholder="Here goes your message" id="message" name="message" rows="4"></textarea>
+                        <textarea placeholder="Here goes your message" id="message" name="message" rows="8"></textarea>
                     </div>
                 </fieldset>
                 <div class="button">
@@ -87,7 +91,7 @@
                 </div>
             </form>
         </section>
-        <section>
+        <section class="headquarters">
             <h2>Headquarters</h2>
             <div class="addressinfo">
                 <div class="addressdata">
