@@ -402,6 +402,6 @@ textarea {
     flex: 1;
     max-width: 600px;
     height: 450px;
-    border: 5px solid #EE964B;
+    border: 1px solid;
     border-radius: 8px;
 }
