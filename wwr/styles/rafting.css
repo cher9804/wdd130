@@ -325,6 +325,17 @@ textarea {
     font-size: 1rem;
 }
 
+.checkbox {
+    justify-self: center;
+}
+
+input[type="checkbox"] {
+    margin: 0 auto;
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
 .button  {
     display: flex;
     justify-content: center;
